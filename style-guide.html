@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>The Great Wall Tea | Style Guide</title>
+      <link rel="stylesheet" type="text/css" href="css/main.css" />
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+   </head>
+   <body>
+      <!-- HEADER -->
+      <header>
+         <h1>The Great Wall Tea</h1>
+         <nav class="mainNav">
+            <div class="navContainer">
+               <a class="navLink currentLink" href="#">Style Guide</a>
+               <a class="navLink" href="tea.html">Tea</a>
+               <a class="navLink" href="cart.html">Cart</a>
+               <a class="navLink" href="checkout.html">Checkout</a>
+            </div>
+         </nav>
+         <nav class="styleGuideNav">
+            <div class="navContainer">
+               <a class="navLink" href="#interactiveElem">Interactive Elements</a>
+               <a class="navLink" href="#textElem">Text Elements</a>
+               <a class="navLink" href="#combinedElem">Combined Elements</a>
+               <a class="navLink" href="#visualElem">Visual Elements</a>
+               <a class="navLink" href="#brandInfo">Brand Information</a>
+               <a class="navLink" href="#references">References</a>
+            </div>
+         </nav>
+      </header>
+      <!-- //END HEADER -->
+
+      <!-- INTERACTIVE ELEMENTS -->
+      <section id="interactiveElem">
+      <h2>Interactive Elements</h2>
+
+      <section class="linkElement">
+         <h3>Standard In-text Link</h3>
+         <p>This is a sentence. Here is a <a href="#">link.</a></p>
+      </section>
+
+      <section class="linkElement">
+         <h3>Navigation Link</h3>
+         <nav class="mainNav">
+            <div class="navContainer">
+               <a class="navLink" href="#">Navigation Link</a>
+            </div>
+         </nav>
+         <h4>CSS Selectors</h4>
+         <p>.mainNav</p>
+         <p>.navContainer</p>
+         <p>.navLink</p>
+      </section>
+
+      <section class="elements">
+         <h3>Buttons [Submit and Reset]</h3>
+         <div id="exampleButtons">
+            <button name="submit" class="submitBtn">Submit</button>
+            <button name="reset" class="resetBtn">Reset</button>
+         </div>
+         <h4>CSS Selectors</h4>
+         <p>.submit button</p>
+         <p>.reset button</p>
+      </section>
+
+      <section class="elements">
+         <h3>Text Input Field with Label</h3>
+         <form>
+            <label for="surName">Surname</label>
+            <input type="text" name="surName" id="surName" placeholder="Insert Your Surname Here"/>
+         </form>
+      </section>
+
+      <section class="elements">
+         <h3>Radio Button with Label</h3>
+         <label>Shipping Option</label>
+         <p><em>If you purchase more than &#36;50.00, the standard shipping fee will be waived</em></p>
+         <input type="radio" name="shipping" id="freeShipping" value="Free Shipping"> Free Shipping for &#36;0.00 (Allow up to 5 more business days for shipping)<br />
+         <input type="radio" name="shipping" id="standardShipping" value="Standard Shipping"> Standard Shipping for &#36;3.49 (Expect 4-6 business days)<br />
+         <input type="radio" name="shipping" id="expressShipping" value="Express Shipping"> Express Shipping for &#36;8.89 (Expect up to 2 business days)
+      </section>
+
+      <section class="elements">
+         <h3>Image as a Link</h3>
+         <figure class="imageLink">
+            <a href="#"><img src="images/frontSideView.jpg" alt="front view of the tea bar"/></a>
+            <figcaption>Front view of the tea bar, the signature view of our store</figcaption>
+         </figure>
+         <h4>CSS Selectors</h4>
+         <p>.imageLink</p>
+      </section>
+    </section>
+      <!-- //END INTERACTIVE ELEMENTS -->
+
+      <!-- TEXT ELEMENTS -->
+      <section id="textElem">
+      <h2>Text Elements</h2>
+      <!-- Header styling -->
+      <section class="elements">
+         <h3>Types of Headings</h3>
+         <p class="h1Example">H1, The Largest Header (The Page Title)</p>
+         <h2>H2, Second Largest header (Main Section Heading)</h2>
+         <h3>H3, Third Largest header (Primary Sub-Section Heading)</h3>
+         <h4>H4, Fourth Largest header (Secondary Sub-Section Heading)</h4>
+      </section>
+      <!-- styling paragraph -->
+      <section class="elements">
+         <h3>Paragraphs</h3>
+         <p>This is a paragraph. A pargraph is a form of numerous combined sentences. You can insert as much content as you can, as long as it is readble and reasonable to read it. It would be great if I can add some more sentences on top of this, but I am running out of an idea so I can possibly conclude the sentence right here.</p>
+      </section>
+      <!-- styling numbered lists -->
+      <section class="elements">
+         <h3>Numbered Lists</h3>
+         <ol>
+            <li>Peachee Puerh</li>
+            <li>Metcha Matcha</li>
+         </ol>
+      </section>
+      <!-- styling bulleted lists -->
+      <section class="elements">
+         <h3>Bulleted Lists</h3>
+         <ul>
+            <li>Peachee Puerh</li>
+            <li>Metcha Matcha</li>
+         </ul>
+      </section>
+    </section>
+      <!-- // TEXT ELEMENTS -->
+
+      <!-- COMBINED ELEMENTS -->
+      <section id="combinedElem">
+         <h2>Combined Elements</h2>
+         <!-- styling navigation -->
+         <section class="elements">
+            <h3>Main Navigation</h3>
+            <nav class="mainNav">
+               <div class="navContainer">
+                  <a class="navLink" href="#">Home</a>
+                  <a class="navLink" href="#">Tea</a>
+                  <a class="navLink" href="#">Lookbook</a>
+                  <a class="navLink" href="#">About Us</a>
+               </div>
+            </nav>
+         </section>
+      </section>
+      <!-- // COMBINED ELEMENTS -->
+
+      <!-- DESIGN ELEMENTS -->
+      <section id="visualElem">
+         <h2>Visual Elements</h2>
+         <section class="elements">
+            <h3>Fonts</h3>
+            <p class="fontEg znikomit">Znikomit (Headings)</p>
+            <p class="FontEg znikomit">regular only</p>
+            <p class="FontEg znikomit">arial font for headings, <a href="http://allfont.net/allfont.css?fonts=znikomit">Allfont.net</a></p>
+            <p class="fontEg proximaNova">Proxima Nova (Copy Text)</p>
+            <p>regular, <strong>bold</strong>, and <em>italic</em></p>
+            <p>sans-serif font for paragraphs, <a href="https://use.typekit.net/ryq3etf.css">Typekit.com</a></p>
+         </section>
+         <section class="elements">
+            <h3>Colours</h3>
+                <div class="prodContainer">
+                  <div class="clrBlock bgClr">
+                  </div>
+                  <div class="clrBlock textClr">
+                  </div>
+                  <div class="clrBlock acct1Clr">
+                  </div>
+                  <div class="clrBlock acct2Clr">
+                  </div>
+                  <div class="clrBlock acct3Clr">
+                  </div>
+                  <div class="clrBlock acct4Clr">
+                  </div>
+                </div>
+         </section>
+         <section class="elements">
+            <h3>Images</h3>
+            <p>Some images to be used on product pages and throughout website.</p>
+            <div class="prodContainer">
+               <figure class="product"><img src="images/tea1.png" alt="tea01"></figure>
+               <figure class="product"><img src="images/tea2.png" alt="tea02"></figure>
+               <figure class="product"><img src="images/tea3.png" alt="tea03"></figure>
+               <figure class="product"><img src="images/tea4.png" alt="tea04"></figure>
+               <figure class="product"><img src="images/tea5.png" alt="tea05"></figure>
+               <figure class="product"><img src="images/tea6.png" alt="tea06"></figure>
+            </div>
+         </section>
+      </section>
+      <!-- // DESGIN ELEMENTS -->
+
+      <!-- BRAND INFORMATION -->
+      <section id="brandInfo">
+         <h2>Brand Information</h2>
+         <section class="elements">
+            <h3>What does Great Wall Tea Company offer?</h3>
+            <p>The Great Wall Tea Company is well known for its mosaic walls filled by rounded tea tin cases, for many varieties of fresh, outstanding quality loose-leaf tea leave blends.</p>
+            <h3>Who is the company to prospective customers?</h3>
+            <p>The Great Wall Tea Company is is suitable for individuals who are sensitive from drinking certain amount of coffee. Besides, tea becomes a great drink for socializing in the daytime, drink some tea, have some dessert and have some conversation with friends or company at work or during weekends can be a great moment for many people. Besides, herbal or white tea including green tea, jasmine tea, mate and pu-erh tea may boost metabolism, helps blood flow well and potentially prevent heart attack and stroke. </p>
+            <h3>Why may the company entice someone to purchase a product or service?</h3>
+            <h4>Customer...</h4>
+            <ul>
+               <li>This company offers a wide varieties of authentic tea from all over the globe.</li>
+            </ul>
+         </section>
+         <section class="elements">
+            <h3>Inspiration</h3>
+            <ul>
+               <li>Hover on Header and atmosphere</li>
+               <li>Murchie's Tea, <a href="">Insirational Images</a> Images:</li>
+            </ul>
+            <figure>
+               <img class="imageInspir" src="images/inspiration1.png" alt="#1 of an inspirational image"/>
+            </figure>
+         </section>
+      </section>
+      <!-- // BRANDING ELEMENTS -->
+
+      <!-- REFERENCES -->
+      <section class="elements">
+         <section id="references">
+            <h2>References</h2>
+            <ul>
+               <li>Serban, H. (2018). <strong>P01 - Style Guide Template [html template].</strong> Retrieved from https://www.canvas.sfu.ca</li>
+               <li>W3Schools. (n.d.), Retrieved from https://www.w3schools.com/</li>
+               <li>gluk (2011). <strong>Znikomit [font].</strong> Retrieved from <a href="http://allfont.net/download/znikomit/">http://allfont.net/download/znikomit/</a></li>
+               <li>Simonson, M. (2005). <strong>Proxima Nova [font].</strong> Retrieved from <a href="https://fonts.adobe.com/fonts/proxima-nova">https://fonts.adobe.com/fonts/proxima-nova</a></li>
+               <li>Figure 1. <strong>[Heavenly Tea Leaves Tea of the Month Club - Loose Leaf Tea Subscription][Image].</strong>(n.d.). Retrieved from <a href="https://www.amazon.com/Heavenly-Tea-Leaves-Month-Club/dp/B07CXWRMKT">https://www.amazon.com/Heavenly-Tea-Leaves-Month-Club/dp/B07CXWRMKT</a></li>
+               <li>Figure 2. <strong>[Heavenly Tea Leaves Tea of the Month Club - Loose Leaf Tea Subscription][Image].</strong>(n.d.). Retrieved from <a href="https://www.amazon.com/Heavenly-Tea-Leaves-Month-Club/dp/B07CXWRMKT">https://www.amazon.com/Heavenly-Tea-Leaves-Month-Club/dp/B07CXWRMKT</a></li>
+               <li>Figure 3. <strong>[Heavenly Tea Leaves Tea of the Month Club - Loose Leaf Tea Subscription][Image].</strong>(n.d.). Retrieved from <a href="https://www.amazon.com/Heavenly-Tea-Leaves-Month-Club/dp/B07CXWRMKT">https://www.amazon.com/Heavenly-Tea-Leaves-Month-Club/dp/B07CXWRMKT</a></li>
+               <li>Figure 4. <strong>[Heavenly Tea Leaves Tea of the Month Club - Loose Leaf Tea Subscription][Image].</strong>(n.d.). Retrieved from <a href="https://www.amazon.com/Heavenly-Tea-Leaves-Month-Club/dp/B07CXWRMKT">https://www.amazon.com/Heavenly-Tea-Leaves-Month-Club/dp/B07CXWRMKT</a></li>
+               <li>Figure 5. <strong>[Heavenly Tea Leaves Tea of the Month Club - Loose Leaf Tea Subscription][Image].</strong>(n.d.). Retrieved from <a href="https://www.amazon.com/Heavenly-Tea-Leaves-Month-Club/dp/B07CXWRMKT">https://www.amazon.com/Heavenly-Tea-Leaves-Month-Club/dp/B07CXWRMKT</a></li>
+               <li>Figure 6. <strong>[Heavenly Tea Leaves Tea of the Month Club - Loose Leaf Tea Subscription][Image].</strong>(n.d.). Retrieved from <a href="https://www.amazon.com/Heavenly-Tea-Leaves-Month-Club/dp/B07CXWRMKT">https://www.amazon.com/Heavenly-Tea-Leaves-Month-Club/dp/B07CXWRMKT</a></li>
+               <li>Murchie's Tea. (n.d.). Retrieved from https://www.murchies.com/store/</li>
+            </ul>
+         </section>
+      </section>
+      <!-- //REFERENCES -->
+   </body>
+</html>
