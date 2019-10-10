@@ -1,0 +1,428 @@
+@import url("http://allfont.net/allfont.css?fonts=znikomit");
+@import url("https://use.typekit.net/ryq3etf.css");
+/*
+  Sources for Typefaces:
+  http://allfont.net/download/znikomit/
+  https://fonts.adobe.com/fonts/proxima-nova
+*/
+
+/* MAIN CSS COMPONENTS FILE THROUGHOUT THE PROJECT */
+
+body {
+  background-color: #F3F4F6;
+  font-family: 'Proxima Nova', arial;
+  font-style: normal;
+  margin: 0rem 0rem 4rem;
+  font-size: 1rem;
+  overflow-wrap: break-word;
+}
+
+/* HEADER STYLING */
+header {
+  background-color: #F5ECE4;
+  padding-top: 0.5rem;
+}
+
+header h1 {
+  margin: auto;
+  width: 90%;
+}
+
+.navContainer {
+  margin: auto;
+  width: 90%;
+}
+
+.navLink:hover {
+  cursor: pointer;
+  background-color: #CCCCCC;
+}
+
+/* NAVIGATION STYLING */
+
+a:link {
+  color: #6E6663;
+}
+
+.mainNav {
+  background-color: #601A14;
+  color: #FFFFFF;
+  font-size: 0.8rem;
+  width:100%;
+  margin-top: 0.5rem;
+}
+
+.navLink {
+  border-bottom: 3px solid transparent;
+  display: inline-block;
+  font-size: 0.85rem;
+  transition: 0.3s;
+  padding: 0.7rem;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.navLink:last-child {
+   margin-right: 0rem;
+}
+
+.styleGuideNav {
+  background-color: #B5ABA3;
+  margin-top: 0em;
+}
+
+.currentLink {
+  border-bottom: 3px dashed;
+}
+
+/* MAIN - PAGE WIDTH STYLING */
+
+#interactiveElem, #pageTempl {
+  padding: 0.8rem 0rem 0rem;
+  border-bottom: 1.5px  #E8D8C3 dotted;
+  margin: auto;
+  width: 65%;
+}
+
+#combinedElem, #brandInfo, #textElem, #visualElem, #references {
+  border-bottom: 2px #E8D8C3 dashed;
+  margin: auto;
+  width: 65%;
+}
+
+.linkElement {
+  color: #000000;
+}
+
+.elements {
+  margin: 1rem 0rem 2.2rem 0rem;
+  width: 100%;
+  padding-bottom: 1rem;
+  border-bottom: 1px #6E6663 dotted;
+}
+
+/* STYLING FOR TEXT, IMAGE AND LINK */
+figure {
+  margin: 0rem;
+  display: inline-block;
+}
+
+h1 {
+  font-family: 'Znikomit', serif;
+}
+
+h2, h3, h4 {
+  font-family: 'Znikomit', serif;
+}
+
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+p a, li a {
+  color: #E8D8C3;
+  font-weight: bold;
+  transition: 0.1s;
+}
+
+p a:hover, p a:active, p a:focus,
+li a:hover, a:active, a:focus {
+  background-color:#AAAAAA;
+}
+
+img {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  padding: 0.78em;
+  max-width: 100%;
+  max-height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.imageLink a {
+  transition: 0.1s;
+  border-bottom: none;
+}
+
+.imageLink a:hover, .imageLink a:active, .imageLink a:focus {
+  opacity: 0.7;
+  border-bottom: none;
+}
+
+/* STYLING FOR FORMS AND INPUTS */
+label {
+  display: block;
+  margin: 0rem 1rem 0rem 0rem;
+  font-weight: bold;
+}
+
+.h1Example {
+  font-size: 2rem;
+  margin: 0rem;
+  font-family: 'Znikomit', arial;
+}
+
+code {
+  background-color: #E8E8E8;
+  display: block;
+  padding:1rem;
+}
+
+ul {
+  list-style-type: square;
+  line-height: 1.75rem;
+  margin: 0rem 0rem 1rem 0rem;
+}
+
+pre {
+  padding: 0rem;
+  margin: 0rem;
+  white-space: pre-wrap;
+}
+
+input {
+  background-color: #FFFFFF;
+  border: 0rem;
+  padding: 1rem;
+  margin-top: 1rem;
+  transition: 0.3s;
+}
+
+input:hover, input:active, input:focus {
+  background-color: #AAAAAA;
+}
+
+input[type=text] {
+  width: 20rem;
+  height: 2.5rem;
+  margin-bottom: 1.6rem;
+}
+
+input[type=radio] {
+  margin-bottom: 1.6rem;
+}
+
+/* STYLING FOR BUTTONG */
+#exampleButtons {
+  padding: 1.5rem;
+  width: 24rem;
+  background-color: #B5ABA3;
+}
+
+button {
+  text-transform: uppercase;
+  border: none;
+  width: 100%;
+  font-family: 'Proxima Nova', sans-serif;
+  transition: 0.3s;
+  padding: 0.8rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #AAAAAA;
+}
+
+.resetBtn {
+  background-color: #F3F4F6;
+  border: 1px transparent;
+}
+
+.submitBtn {
+  background-color: #6E6663;
+  color: #FFFFFF;
+  border: 1px transparent;
+  transition: 0.3s;
+}
+
+/* li styling instructions retrieved from https://css-tricks.com/custom-list-number-styling/ */
+ol {
+  line-height: 1.75rem;
+  list-style: none;
+  padding-left: 2rem;
+  margin-top: 0rem;
+}
+
+ol li {
+  counter-increment: list-counter;
+}
+
+ol li::before {
+  content: counter(list-counter) ". ";
+  font-weight: 700;
+  padding-right: 1rem;
+}
+
+.fontEg {
+  font-size: 2rem;
+  margin: 0rem;
+}
+
+.znikomit {
+  font-family: 'Znikomit', arial;
+  margin-top: 1.2rem;
+}
+
+.proximaNova {
+  font-family: 'Proxima Nova', sans-serif;
+  margin-top: 0.3rem;
+}
+
+.bgClr {
+  background-color: #F3F4F6;
+  max-width: 20rem;
+  height: 10rem;
+  border: 1px solid #000000;
+}
+
+.textClr {
+  background-color: #000000;
+  color: #FFFFFF;
+  max-width: 20rem;
+  height: 10rem;
+  border: 1px solid transparent;
+}
+
+.acct1Clr {
+  background-color: #B5ABA3;
+  max-width: 20rem;
+  height: 10rem;
+  border: 1px transparent;
+}
+
+.acct2Clr {
+  background-color: #601A14;
+  color: #FFFFFF;
+  max-width: 20rem;
+  height: 10rem;
+  border: 1px solid transparent;
+}
+
+.acct3Clr {
+  background-color: #6E6663;
+  color: #FFFFFF;
+  max-width: 20rem;
+  height: 10rem;
+  border: 1px solid transparent;
+}
+
+.acct4Clr  {
+  background-color: #EBD8C3;
+  max-width: 20rem;
+  height: 10rem;
+  border: 1px solid transparent;
+}
+
+.imageInspir {
+  max-width: 24rem;
+  padding: 1rem;
+}
+
+.colourContainer {
+  background-color: #EBD8C3;
+  min-width: 12rem;
+  max-width: 15rem;
+  padding: 1rem;
+}
+
+.clrContainerText {
+  min-width: 5rem;
+}
+
+/* TEA (ITEMS) PAGE  */
+.productInfo {
+  width: inherit;
+  padding: 0 2rem 2rem 2rem;
+}
+
+/* CART PAGE */
+
+#total {
+  border-bottom: 2px  #E8D8C3 dotted;
+  padding-bottom: 1rem;
+}
+
+.cartItem {
+  background-color: #EBD8C3;
+  max-width: 24rem;
+  padding: 1rem;
+}
+
+.cartInfo {
+  width: inherit;
+  padding: 0rem 2rem 2rem 2rem;
+}
+
+.cartTotal {
+  background-color: #E4D3C3;
+  padding: 0rem 1rem 1rem 1rem;
+}
+
+/* CHECKOUT PAGE */
+.paymentForm h4 {
+  margin-top: 1rem;
+}
+
+/*
+Referring code from flexbox example in Lecture by Helmine Serban, retrieved from canvas.sfu.ca
+and referencing https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+*/
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+.ItemContainer, .prodContainer, .paymentContainer {
+  margin-left: -1rem;
+
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+
+  align-items: flex-start;
+  -webkit-align-items: flex-start;
+  -ms-align-items: flex-start;
+
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+}
+
+.product {
+  flex: 1 1 15rem;
+  -webkit-flex: 1 1 15rem;
+  -ms-webkit-flex:  1 1 15rem;
+  margin: 1.5rem;
+  max-width: 25rem;
+  background: #EBD8C3;
+}
+
+.ItemContainer > * {
+  margin: 1rem 1rem 2rem 1rem;
+
+  flex: 1 1 17rem;
+  -webkit-flex: 1 1 17rem;
+  -ms-webkit-flex:  1 1 17rem;
+}
+
+.paymentContainer > * {
+  margin: 1.2rem 1.2rem 2.3rem 1.2rem;
+
+  flex: 1 1 17rem;
+  -webkit-flex: 1 1 17rem;
+  -ms-webkit-flex:  1 1 17rem;
+}
+
+.clrBlock {
+  flex: 1 1 15rem;
+  -webkit-flex: 1 1 15rem;
+  -ms-webkit-flex:  1 1 15rem;
+
+  padding: 1.3rem;
+  margin: 1.3rem;
+}
