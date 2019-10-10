@@ -1,0 +1,198 @@
+@import url("http://allfont.net/allfont.css?fonts=znikomit");
+@import url("https://use.typekit.net/ryq3etf.css");
+
+body {
+  background-color: #F3F4F6;
+  font-family: 'Proxima Nova', sans-serif;
+  font-style: normal;
+  font-size: 1rem;
+  margin: 0rem 0rem 4rem;
+  /*overflow-wrap: break-word;*/
+}
+
+header {
+  background-color: #F5ECE4;
+  font-family: 'Znikomit', arial;
+  padding-top: 0.5rem;
+}
+
+header h1 {
+  margin: auto;
+  width: 90%;
+}
+
+.navContainer {
+  margin: auto;
+  width: 90%;
+}
+
+.navLink:hover {
+  cursor: pointer;
+  background-color: #DDDDDD;
+}
+
+/* NAVIGATION STYLING */
+
+a:link {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.mainNav {
+  background-color: #727272;
+  color: #FFFFFF;
+  font-size: 0.8rem;
+  width:100%;
+  margin-top: 0.5rem;
+  display: inline-block;
+
+}
+
+.navLink {
+  border-bottom: 3px solid transparent;
+  display: inline-block;
+  font-size: 0.85rem;
+  transition: 0.3s;
+  padding: 0.7rem;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+/*
+.navLink:last-child {
+   margin-right: 0rem;
+}
+*/
+
+.styleGuideNav {
+  background-color: #B5ABA3;
+  margin-top: 0em;
+}
+
+.currentLink {
+  border-bottom: 3px solid;
+}
+
+/* MAIN - PAGE WIDTH STYLING */
+
+#interactiveElem, #pageTempl {
+  padding: 0.8rem 0rem 0rem;
+  border-bottom: 1.5px  #E8D8C3 dotted;
+  margin: auto;
+  width: 65%;
+}
+
+#combinedElem, #brandInfo, #textElem, #visualElem, #references {
+  border-bottom: 2px #E8D8C3 solid;
+  margin: auto;
+  width: 65%;
+}
+
+.linkElement {
+  color: #000000;
+}
+
+.elements {
+  margin: 1rem 0rem 2.2rem 0rem;
+  width: 100%;
+  padding-bottom: 1rem;
+  border-bottom: 1px #6E6663 dotted;
+}
+
+/* STYLING FOR TEXT, IMAGE AND LINK */
+figure {
+  margin: 0rem;
+  display: inline-block;
+}
+
+h1 {
+  font-family: 'Znikomit', serif;
+}
+
+h2, h3, h4 {
+  font-family: 'Znikomit', serif;
+}
+
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+p a, li a {
+  color: #E8D8C3;
+  font-weight: bold;
+  transition: 0.1s;
+}
+
+p a:hover, p a:active, p a:focus,
+li a:hover, a:active, a:focus {
+  background-color:#AAAAAA;
+}
+
+img {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  padding: 0.78em;
+  max-width: 100%;
+  max-height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.imageLink a {
+  transition: 0.1s;
+  border-bottom: none;
+}
+
+.imageLink a:hover, .imageLink a:active, .imageLink a:focus {
+  opacity: 0.7;
+  border-bottom: none;
+}
+
+/* STYLING FOR FORMS AND INPUTS */
+label {
+  display: block;
+  margin: 0rem 1rem 0rem 0rem;
+  font-weight: bold;
+}
+
+.h1Example {
+  font-size: 2rem;
+  margin: 0rem;
+  font-family: 'Znikomit', arial;
+}
+
+ul {
+  list-style-type: square;
+  line-height: 1.75rem;
+  margin: 0rem 0rem 1rem 0rem;
+}
+
+pre {
+  padding: 0rem;
+  margin: 0rem;
+  white-space: pre-wrap;
+}
+
+input {
+  background-color: #FFFFFF;
+  border: 0rem;
+  padding: 1rem;
+  margin-top: 1rem;
+  transition: 0.3s;
+}
+
+input:hover, input:active, input:focus {
+  background-color: #AAAAAA;
+}
+
+input[type=text] {
+  width: 20rem;
+  height: 2.5rem;
+  margin-bottom: 1.6rem;
+}
+
+input[type=radio] {
+  margin-bottom: 1.6rem;
+}
