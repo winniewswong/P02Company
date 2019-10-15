@@ -1,5 +1,6 @@
 @import url("http://allfont.net/allfont.css?fonts=znikomit");
 @import url("https://use.typekit.net/ryq3etf.css");
+
 /*
   Sources for Typefaces:
   http://allfont.net/download/znikomit/
@@ -19,11 +20,15 @@ body {
 
 /* HEADER STYLING */
 header {
-  background-color: #F5ECE4;
-  padding-top: 0.5rem;
+  text-align: center;
+  background-color: #FFFFFF;
+  padding-top: 3rem;
+  font-family: arial;
+  font-size: 15px;
 }
 
 header h1 {
+  font-family: 'Znikomit', Arial, sans-serif;
   margin: auto;
   width: 90%;
 }
@@ -35,7 +40,7 @@ header h1 {
 
 .navLink:hover {
   cursor: pointer;
-  background-color: #CCCCCC;
+  color: #601A14;
 }
 
 /* NAVIGATION STYLING */
@@ -45,19 +50,21 @@ a:link {
 }
 
 .mainNav {
-  background-color: #601A14;
+  background-color: #EBD8C3;
   color: #FFFFFF;
   font-size: 0.8rem;
   width:100%;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
+  padding: 0.8rem;
 }
 
 .navLink {
   border-bottom: 3px solid transparent;
+  color: #FFFFFF;
   display: inline-block;
   font-size: 0.85rem;
   transition: 0.3s;
-  padding: 0.7rem;
+  padding: 0.8rem;
   text-align: left;
   text-transform: uppercase;
 }
@@ -72,12 +79,12 @@ a:link {
 }
 
 .currentLink {
-  border-bottom: 3px dashed;
+  border-bottom: 3px solid;
 }
 
 /* MAIN - PAGE WIDTH STYLING */
 
-#interactiveElem, #pageTempl {
+#interactiveElem, #pageTempl, #TopBanner, #HighlightSection {
   padding: 0.8rem 0rem 0rem;
   border-bottom: 1.5px  #E8D8C3 dotted;
   margin: auto;
@@ -109,6 +116,7 @@ figure {
 
 h1 {
   font-family: 'Znikomit', serif;
+  color: rgb(0,0,0,0.5);
 }
 
 h2, h3, h4 {
@@ -379,7 +387,6 @@ and referencing https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
 .ItemContainer, .prodContainer, .paymentContainer {
   margin-left: -1rem;
-
   display: flex;
   display: -webkit-flex;
   display: -ms-flex;
