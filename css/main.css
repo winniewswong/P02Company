@@ -84,11 +84,18 @@ a:link {
 
 /* MAIN - PAGE WIDTH STYLING */
 
-#interactiveElem, #pageTempl, #TopBanner, #HighlightSection {
+#interactiveElem, #pageTempl, #HighlightSection {
   padding: 0.8rem 0rem 0rem;
   border-bottom: 1.5px  #E8D8C3 dotted;
   margin: auto;
   width: 65%;
+}
+
+#TopBanner{
+  padding: 0rem 0rem 0rem;
+  margin: auto;
+  width: 70%;
+  align-items: center;
 }
 
 #combinedElem, #brandInfo, #textElem, #visualElem, #references {
@@ -408,6 +415,14 @@ and referencing https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   max-width: 25rem;
   background: rgb(235,216,195, 0.1);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
+}
+
+.home_product {
+  flex: 1 1 15rem;
+  -webkit-flex: 1 1 15rem;
+  -ms-webkit-flex:  1 1 15rem;
+  margin: 0.5rem;
+  max-width: 30rem;
 }
 
 .ItemContainer > * {
