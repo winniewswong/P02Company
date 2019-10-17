@@ -406,7 +406,8 @@ and referencing https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   -ms-webkit-flex:  1 1 15rem;
   margin: 1.5rem;
   max-width: 25rem;
-  background: #EBD8C3;
+  background: rgb(235,216,195, 0.1);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
 }
 
 .ItemContainer > * {
