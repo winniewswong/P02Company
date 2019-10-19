@@ -253,6 +253,7 @@ button:hover {
   color: #FFFFFF;
   border: 1px transparent;
   transition: 0.3s;
+  width: 15rem;
 }
 
 /* li styling instructions retrieved from https://css-tricks.com/custom-list-number-styling/ */
@@ -417,6 +418,10 @@ and referencing https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
 }
 
+.contact-us-image{
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2)
+}
+
 .home_product {
   flex: 1 1 15rem;
   -webkit-flex: 1 1 15rem;
@@ -448,4 +453,11 @@ and referencing https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
   padding: 1.3rem;
   margin: 1.3rem;
+}
+
+/* CONTACT PAGE */
+#contact-us {
+  border-bottom: 2px  #E8D8C3 dotted;
+  padding-bottom: 1rem;
+
 }
