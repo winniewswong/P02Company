@@ -1,9 +1,9 @@
-@import url("http://allfont.net/allfont.css?fonts=znikomit");
+@import url('https://fonts.googleapis.com/css?family=Cabin&display=swap');
 @import url("https://use.typekit.net/ryq3etf.css");
 
 /*
   Sources for Typefaces:
-  http://allfont.net/download/znikomit/
+  https://fonts.google.com/specimen/Cabin?selection.family=Cabin
   https://fonts.adobe.com/fonts/proxima-nova
 */
 
@@ -28,7 +28,7 @@ header {
 }
 
 header h1 {
-  font-family: 'Znikomit', Arial, sans-serif;
+  font-family: 'Cabin', sans-serif;
   margin: auto;
   width: 90%;
 }
@@ -122,12 +122,12 @@ figure {
 }
 
 h1 {
-  font-family: 'Znikomit', serif;
+  font-family: 'Cabin', sans-serif;
   color: rgb(0,0,0,0.5);
 }
 
 h2, h3, h4 {
-  font-family: 'Znikomit', serif;
+  font-family: 'Cabin', sans-serif;
 }
 
 a {
@@ -177,7 +177,7 @@ label {
 .h1Example {
   font-size: 2rem;
   margin: 0rem;
-  font-family: 'Znikomit', arial;
+  font-family: 'Cabin', sans-serif;
 }
 
 code {
@@ -280,7 +280,7 @@ ol li::before {
 }
 
 .znikomit {
-  font-family: 'Znikomit', arial;
+  font-family: 'Cabin', sans-serif;
   margin-top: 1.2rem;
 }
 
