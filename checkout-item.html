@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>The Great Wall Tea - Checkout</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <h1>The Great Wall Tea</h1>
+      <nav class="mainNav">
+        <div class="navContainer">
+          <a class="navLink" href="home.html">Home</a>
+          <a class="navLink currentLink" href="product-listing.html">Our Teas</a>
+          <a class="navLink" href="about-the-company.html">About Us</a>
+          <a class="navLink" href="contact-us.html">Contact Us</a>
+          <a class="navLink" href="checkout.html"></a>
+        </div>
+      </nav>
+    </header>
+    <!-- //END HEADER -->
+    <section id="pageTempl">
+      <h2>Checkout</h2>
+      <h3>Payment Information</h3>
+      <div class="paymentContainer">
+        <section class="paymentForm">
+          <h4>Payment Information</h4>
+          <form action="#" method="post">
+            <label>Card Type</label>
+            <input type="radio" name="cardType" value="visa" id="visa"/> Visa
+            <input type="radio" name="cardType" value="mastercard" id="mastercard"/> Mastercard
+            <input type="radio" name="cardType" value="debit" id="debit"/> Debit
+            <label for="nameOnCard">Full Name on Card</label>
+            <input type="text" name="nameOnCard" id="nameOnCard" placeholder="Your Full Name"/>
+            <label for="cardNum">Card Number</label>
+            <input type="text" name="cardNum" id="cardNum" placeholder="1234-5678-9012-3456" maxlength="19"/>
+            <label for="exp">Expiry Date (MM/YY)</label>
+            <input type="text" name="exp" id="exp" placeholder="MM/YY" maxlength="5"/>
+            <label for="cardSecurityCode">Card Security Code</label>
+            <input type="text" name="cardCecurityCode" id="cardSecurityCode" placeholder="000" maxlength="3"/>
+            <label for="phoneNum">Home Number</label>
+            <input type="text" name="phoneNum" id="phoneNum" placeholder="123)456-7890" maxlength="12"/>
+            <label for="mobileNum">Mobile Number</label>
+            <input type="text" name="mobileNum" id="mobileNum" placeholder="123)456-7890" maxlength="12"/>
+          </form>
+        </section>
+        <section class="paymentForm">
+          <h4>Billing Address</h4>
+          <form action="#" method="post">
+            <input type="checkbox" name="bill_addr" id="bill_addr"/> Apply my shipping address below
+            <p>Forename Surname<br /> 90 123rd Street<br /> City, Province,<br /> Canada,<br /> A0A 0A0</p>
+            <label for="surName">Surname</label>
+            <input type="text" name="surName" id="surName" placeholder="Surname"/>
+            <label for="foreName">Forename</label>
+            <input type="text" name="foreName" id="foreName" placeholder="Forename"/>
+            <label for="streetNumL1">Street Number Line 1</label>
+            <input type="text" name="streetNumL1" id="streetNumL1" placeholder="90 123rd Street"/>
+            <label for="streetNumL2">Street Number Line 2</label>
+            <input type="text" name="streetNumL2" id="streetNumL2" placeholder="#123rd Unit or #PO Box"/>
+            <label for="prov">Province</label>
+            <input type="text" name="prov" id="prov" placeholder="Province"/>
+            <label for="cout">Country</label>
+            <input type="text" name="cout" id="cout" placeholder="Canada"/>
+            <label for="pstlCode">Postal Code</label>
+            <input type="text" name="pstlCode" id="pstlCode" placeholder="A0A0A0" maxlength="6"/>
+          </form>
+        </section>
+        <section class="cartTotal">
+          <h2>Summary: 3 Items</h2>
+          <ol id="total">
+            <li>Subtotal: &#36;74.14</li>
+            <li>TAX [GST - 5%]: &#36;3.71</li>
+            <li>TAX [PST - 7%]: &#36;5.19</li>
+            <li>Shipping: Free</li>
+          </ol>
+          <p>Estimated Total: &#36;83.04</p>
+          <button name="checkout" class="submitBtn">Checkout</button>
+          <button name="back" class="resetBtn" onclick="window.location.href='cart.html'">Back to Cart</button> <!-- reference for button link from http://www.hyperlinkcode.com/button-links.php -->
+        </section>
+      </div>
+    </section>
+    <!-- //END PAYMENT -->
+  </body>
+</html>
