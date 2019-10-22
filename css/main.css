@@ -121,7 +121,7 @@ a:link {
 }
 
 #TopBanner{
-  padding: 0rem 0rem 0rem;
+  padding-top: 3rem;
   margin: auto;
   width: 70%;
   align-items: center;
@@ -385,6 +385,12 @@ ol li::before {
   padding: 0 2rem 2rem 2rem;
 }
 
+
+#suggested-teas{
+  padding-top:3rem;
+  padding-bottom:3rem;
+}
+
 /* CART PAGE */
 
 #total {
@@ -448,7 +454,8 @@ and referencing https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 }
 
 .contact-us-image{
-    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2)
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    width:60%;
 }
 
 .home_product {
