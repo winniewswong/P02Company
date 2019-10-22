@@ -267,7 +267,23 @@ button {
   margin-bottom: 0.3rem;
 }
 
+home-button {
+  text-transform: uppercase;
+  border: none;
+  width: 50%;
+  font-family: 'Proxima Nova', sans-serif;
+  transition: 0.3s;
+  padding: 0.8rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem; 
+}
+
 button:hover {
+  cursor: pointer;
+  background-color: #AAAAAA;
+}
+
+home-button:hover {
   cursor: pointer;
   background-color: #AAAAAA;
 }
