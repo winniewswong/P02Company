@@ -82,6 +82,35 @@ a:link {
   border-bottom: 3px solid;
 }
 
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .navLink {
+  display: none;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .navContainer a:not(:first-child) {display: none;}
+  .navContainer a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .navContainer.responsive {position: relative;}
+  .navContainer.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navContainer.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
 /* MAIN - PAGE WIDTH STYLING */
 
 #interactiveElem, #pageTempl, #HighlightSection {
@@ -238,7 +267,23 @@ button {
   margin-bottom: 0.3rem;
 }
 
+home-button {
+  text-transform: uppercase;
+  border: none;
+  width: 50%;
+  font-family: 'Proxima Nova', sans-serif;
+  transition: 0.3s;
+  padding: 0.8rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem; 
+}
+
 button:hover {
+  cursor: pointer;
+  background-color: #AAAAAA;
+}
+
+home-button:hover {
   cursor: pointer;
   background-color: #AAAAAA;
 }
