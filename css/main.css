@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Cabin&display=swap');
 @import url("https://use.typekit.net/ryq3etf.css");
-
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
 /*
   Sources for Typefaces:
   https://fonts.google.com/specimen/Cabin?selection.family=Cabin
@@ -10,7 +10,6 @@
 /* MAIN CSS COMPONENTS FILE THROUGHOUT THE PROJECT */
 
 body {
-  background-color: #F3F4F6;
   font-family: 'Proxima Nova', arial;
   font-style: normal;
   margin: 0rem 0rem 4rem;
@@ -78,37 +77,108 @@ a:link {
   margin-top: 0em;
 }
 
-.currentLink {
+.navLink-currentLink {
   border-bottom: 3px solid;
 }
 
-/* Hide the link that should open and close the topnav on small screens */
-.topnav .navLink {
-  display: none;
+
+/* HAMBURGER MENU */
+nav ul {
+  margin-left: 8rem;
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 1080px;
+  background: #EBD8C3;
+  list-style-type: none;
+  font-size: 0.85rem;
+  text-align: left;
+  text-transform: uppercase;
+  font-family: 'Cabin', sans-serif;
+}
+nav ul, nav li {
+	flex: 2;
+  align-items: flex-end;
+}
+nav li:last-child {
+   border-bottom: none;
+}
+nav a {
+	text-decoration: none;
+  color: #FFFFFF;
+	display: block;
+}
+nav a:hover {
+  cursor: pointer;
+  color: #601A14;
+  background-color: #EBD8C3;
+}
+nav li a{
+	position: relative;
+	line-height: 50px;
+	color: #FFFFFF;
+	text-align: center;
+}
+nav input, nav label {
+	display: none;
+	width: 36px;
+	height: 36px;
+	background: #555;
+	color: #FFFFFF;
+	text-align: center;
+	line-height: 36px;
+	font-size: 1.6rem;
+	border-radius: 2px;
+}
+nav label {
+   position: absolute;
+   top: 8px;
+   right: 8px;
+   transition: .4s;
+}
+nav label:hover {
+  cursor:pointer;
+  background-color: #EBD8C3;
+}
+nav label:before {
+	font-size: 12px;
+  color: #FFFFFF;
+	content: "\f0c9";
+	text-align: center;
 }
 
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px) {
-  .navContainer a:not(:first-child) {display: none;}
-  .navContainer a.icon {
-    float: right;
-    display: block;
-  }
-}
+/************* MEDIA QUERIES **************/
 
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
-  .navContainer.responsive {position: relative;}
-  .navContainer.responsive a.icon {
+@media only screen and (max-width: 1080px){
+   nav {
+    position: relative;
+   }
+	nav ul {
+		transform: translateY(0);
+		box-shadow: 0 0 5px rgba(0,0,0, .2);
+    transition: all .5s;
     position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .navContainer.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
+    margin: -15px;
+    width: 100%;
+	}
+	nav li {
+		flex: none;
+		width: 100%;
+		border-bottom: solid 1px #777;
+	}
+	nav input[type="checkbox"]:checked + ul  {
+		transform: translateX(+300%);
+		width: 100%;
+    align-items: center;
+		background: #999;
+    transition: all .5s;
+	}
+	nav label{
+      display: block;
+   }
+	nav input[type="checkbox"]:checked + ul li:nth-child(1){
+		background: #EBD8C3;
+		color: #EBD8C3;
+	}
 }
 
 /* MAIN - PAGE WIDTH STYLING */
@@ -216,9 +286,9 @@ code {
 }
 
 ul {
-  list-style-type: square;
-  line-height: 1.75rem;
-  margin: 0rem 0rem 1rem 0rem;
+/*  list-style-type: square; */
+  line-height: 1.5rem;
+/*  margin: 0rem 0rem 1rem 0rem; */
 }
 
 pre {
@@ -228,8 +298,8 @@ pre {
 }
 
 input {
-  background-color: #FFFFFF;
-  border: 0rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1)
+  border: 0.1rem;
   padding: 1rem;
   margin-top: 1rem;
   transition: 0.3s;
@@ -275,7 +345,7 @@ home-button {
   transition: 0.3s;
   padding: 0.8rem;
   margin-top: 0.3rem;
-  margin-bottom: 0.3rem; 
+  margin-bottom: 0.3rem;
 }
 
 button:hover {
@@ -291,11 +361,23 @@ home-button:hover {
 .resetBtn {
   background-color: #F3F4F6;
   border: 1px transparent;
+  width: 15rem;
 }
 
 .submitBtn {
   background-color: #6E6663;
   color: #FFFFFF;
+  border: 1px transparent;
+  transition: 0.3s;
+  width: 15rem;
+}
+
+.navBtn{
+  background-color: rgba(92, 82, 76, 0.5);
+  color: #FFFFFF;
+  margin-left: 11rem;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
   border: 1px transparent;
   transition: 0.3s;
   width: 15rem;
@@ -444,7 +526,7 @@ and referencing https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   box-sizing: border-box;
 }
 
-.ItemContainer, .prodContainer, .paymentContainer {
+.ItemContainer, .prodContainer {
   margin-left: -1rem;
   display: flex;
   display: -webkit-flex;
@@ -459,6 +541,22 @@ and referencing https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   -ms-flex-wrap: wrap;
 }
 
+.paymentContainer{
+  margin-left: -1rem;
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+
+  align-items: flex-start;
+  -webkit-align-items: flex-start;
+  -ms-align-items: flex-start;
+
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
 .product {
   flex: 1 1 15rem;
   -webkit-flex: 1 1 15rem;
@@ -470,7 +568,6 @@ and referencing https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 }
 
 .contact-us-image{
-    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
     width:60%;
 }
 
