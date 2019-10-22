@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Cabin&display=swap');
 @import url("https://use.typekit.net/ryq3etf.css");
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300");
 /*
   Sources for Typefaces:
   https://fonts.google.com/specimen/Cabin?selection.family=Cabin
@@ -19,6 +20,7 @@ body {
 
 /* HEADER STYLING */
 header {
+  position: relative;
   text-align: center;
   background-color: #FFFFFF;
   padding-top: 3rem;
@@ -54,7 +56,7 @@ a:link {
   font-size: 0.8rem;
   width:100%;
   margin-top: 1rem;
-  padding: 0.8rem;
+  padding: 0.1rem;
 }
 
 .navLink {
@@ -84,20 +86,20 @@ a:link {
 
 /* HAMBURGER MENU */
 nav ul {
-  margin-left: 8rem;
 	display: flex;
 	flex-wrap: wrap;
+  align-items: center;
 	max-width: 1080px;
   background: #EBD8C3;
   list-style-type: none;
   font-size: 0.85rem;
-  text-align: left;
+  text-align: center;
   text-transform: uppercase;
   font-family: 'Cabin', sans-serif;
 }
 nav ul, nav li {
 	flex: 2;
-  align-items: flex-end;
+  width: 100%;
 }
 nav li:last-child {
    border-bottom: none;
@@ -110,7 +112,7 @@ nav a {
 nav a:hover {
   cursor: pointer;
   color: #601A14;
-  background-color: #EBD8C3;
+  width: 100%
 }
 nav li a{
 	position: relative;
@@ -122,7 +124,6 @@ nav input, nav label {
 	display: none;
 	width: 36px;
 	height: 36px;
-	background: #555;
 	color: #FFFFFF;
 	text-align: center;
 	line-height: 36px;
@@ -140,8 +141,9 @@ nav label:hover {
   background-color: #EBD8C3;
 }
 nav label:before {
+  font-family: FontAwesome;
 	font-size: 12px;
-  color: #FFFFFF;
+  color: #601A14;
 	content: "\f0c9";
 	text-align: center;
 }
@@ -163,7 +165,7 @@ nav label:before {
 	nav li {
 		flex: none;
 		width: 100%;
-		border-bottom: solid 1px #777;
+		border-bottom: solid 1px rgba(250,250,250, 0.5);
 	}
 	nav input[type="checkbox"]:checked + ul  {
 		transform: translateX(+300%);
@@ -174,6 +176,7 @@ nav label:before {
 	}
 	nav label{
       display: block;
+      background
    }
 	nav input[type="checkbox"]:checked + ul li:nth-child(1){
 		background: #EBD8C3;
@@ -241,8 +244,12 @@ p a, li a {
 }
 
 p a:hover, p a:active, p a:focus,
-li a:hover, a:active, a:focus {
+a:active, a:focus {
   background-color:#AAAAAA;
+}
+
+li a:hover{
+  background-color: rgba(250,250,250, 0.5);
 }
 
 img {
