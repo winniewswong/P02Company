@@ -67,7 +67,7 @@ a:link {
   font-size: 0.85rem;
   transition: 0.3s;
   padding: 0.8rem;
-  text-align: left;
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -94,6 +94,7 @@ nav ul {
   background: #EBD8C3;
   list-style-type: none;
   font-size: 0.85rem;
+  align: center;
   text-align: center;
   text-transform: uppercase;
   font-family: 'Cabin', sans-serif;
