@@ -11,7 +11,7 @@
     <div>
       <input type="checkbox" id="css-toggle-menu" name="css-toggle-menu">
       <ul class="main">
-      <li><a href"home.html">Home</a></li>
+      <li><a href="home.html">Home</a></li>
       <li><a href="product-listing.html">Our Teas</a></li>
       <li><a href="about-the-company.html">About Us</a></li>
       <li><a href="contact-us.html">Contact Us</a></li>
@@ -100,9 +100,12 @@
         <li>Shipping: Free</li>
       </ol>
       <p>Estimated Total: &#36;83.04</p>
-      <button name="checkout" class="submitBtn">Checkout</button>
-      <br>
-      <button name="back" class="resetBtn" onclick="product-listing.html'">Buy More</button> <!-- reference for button link from http://www.hyperlinkcode.com/button-links.php -->
+        <form action="thank-you.html">
+          <button name="submit" class="submitBtn">Checkout</button>
+        </form>
+        <form action="product-listing.html">
+          <button name="back" class="resetBtn">Buy More</button>
+        </form> <!-- reference for button link from http://www.hyperlinkcode.com/button-links.php -->
     </section>
   </div>
 </section>
