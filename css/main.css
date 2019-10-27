@@ -76,7 +76,7 @@ a:link {
 }
 
 .style-guide-nav {
-  background-color: #B5ABA3;
+  background-color: #EBD8C3;
   margin-top: 0em;
 }
 
@@ -84,6 +84,27 @@ a:link {
   border-bottom: 3px solid;
 }
 
+/* FOOTER */
+
+.footer-nav-link {
+  border-bottom: 3px solid transparent;
+  color: #FFFFFF;
+  display: inline-block;
+  font-size: 0.85rem;
+  transition: 0.3s;
+  padding: 2rem;
+  text-transform: uppercase;
+}
+
+.footer-nav-container {
+  width: 90%;
+}
+
+.footer nav a:hover {
+  cursor: pointer;
+  color: #601A14;
+  width: auto;
+}
 
 /* HAMBURGER MENU */
 nav ul {
@@ -140,12 +161,12 @@ nav label {
 }
 nav label:hover {
   cursor:pointer;
-  background-color: #EBD8C3;
+  background-color: rgba(92,85,76, 0.5);
 }
 nav label:before {
   font-family: FontAwesome;
-	font-size: 12px;
-  color: #601A14;
+	font-size: 23px;
+  color: #FFFFFF;
 	content: "\f0c9";
 	text-align: center;
 }
@@ -153,15 +174,17 @@ nav label:before {
 /************* MEDIA QUERIES **************/
 
 @media only screen and (max-width: 1080px){
-   nav {
+  nav {
     position: relative;
    }
+  .main-nav{
+    padding: 0.5rem;
+  }
 	nav ul {
 		transform: translateY(0);
 		box-shadow: 0 0 5px rgba(0,0,0, .2);
     transition: all .5s;
-    position: absolute;
-    margin: -15px;
+    position: relative;
     width: 100%;
 	}
 	nav li {
@@ -170,18 +193,21 @@ nav label:before {
 		border-bottom: solid 1px rgba(250,250,250, 0.5);
 	}
 	nav input[type="checkbox"]:checked + ul  {
-		transform: translateX(+300%);
+		transform: translateX(+110%);
 		width: 100%;
     align-items: center;
-		background: #999;
+		background: #FFFFFF;
     transition: all .5s;
+    position: absolute;
 	}
 	nav label{
-      display: block;
-      background
+      display: inline-block;
+      color: #FFFFFF;
+      background-color: #601A14;
+      align: center;
    }
 	nav input[type="checkbox"]:checked + ul li:nth-child(1){
-		background: #EBD8C3;
+		background-color: #EBD8C3;
 		color: #EBD8C3;
 	}
 }
@@ -311,7 +337,7 @@ input {
 }
 
 input:hover, input:active, input:focus {
-  background-color: #AAAAAA;
+  background-color: rgba(170,170,170, 0.2);
 }
 
 input[type=text] {
@@ -324,7 +350,7 @@ input[type=radio] {
   margin-bottom: 1.6rem;
 }
 
-/* STYLING FOR BUTTONG */
+/* STYLING FOR BUTTON */
 #exampleButtons {
   padding: 1.5rem;
   width: 24rem;
@@ -467,7 +493,7 @@ ol li::before {
 }
 
 .image-inspir {
-  max-width: 24rem;
+  max-width: 80%;
   padding: 1rem;
 }
 
@@ -576,7 +602,7 @@ and referencing https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 }
 
 .contact-us-image{
-    width: 60%;
+    width: 100%;
 }
 
 .home_product {
