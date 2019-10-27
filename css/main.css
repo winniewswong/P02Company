@@ -188,7 +188,7 @@ nav label:before {
 
 /* STYLE-GUIDE.HTML */
 
-#interactiveElem, #page-temp {
+#interac-element, #page-temp {
   padding: 0.8rem 0 0;
   border-bottom: 1.5px  #E8D8C3 dotted;
   margin: auto;

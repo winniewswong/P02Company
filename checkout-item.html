@@ -10,19 +10,26 @@
   <body>
     <!-- HEADER -->
     <header>
-      <h1>The Great Wall Tea</h1>
+      <a href="home.html">
+        <img src="images/logo.png" alt="logo">
+      </a>
       <nav class="main-nav">
-        <div class="nav-container">
-          <a class="nav-link" href="home.html">Home</a>
-          <a class="nav-link current-link" href="product-listing.html">Our Teas</a>
-          <a class="nav-link" href="about-the-company.html">About Us</a>
-          <a class="nav-link" href="contact-us.html">Contact Us</a>
-          <a class="nav-link" href="checkout.html"></a>
-        </div>
+          <div>
+          <input type="checkbox" id="css-toggle-menu" name="css-toggle-menu">
+          <ul class="main">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="product-listing.html">Our Teas</a></li>
+          <li><a href="about-the-company.html">About Us</a></li>
+          <li><a href="contact-us.html">Contact Us</a></li>
+          <li><a href="#">Checkout</a></li>
+          </ul>
+          <label for="css-toggle-menu" id="css-toggle-menu"></label>
+          </input>
+      </div>
       </nav>
     </header>
     <!-- //END HEADER -->
-    <section id="pageTempl">
+    <section id="page-temp">
       <h2>Checkout</h2>
       <h3>Payment Information</h3>
       <div class="payment-container">
