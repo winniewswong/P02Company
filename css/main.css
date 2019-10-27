@@ -13,7 +13,7 @@
 body {
   font-family: 'Proxima Nova', arial;
   font-style: normal;
-  margin: 0rem 0rem 4rem;
+  margin: 0 0 4rem;
   font-size: 1rem;
   overflow-wrap: break-word;
 }
@@ -34,12 +34,12 @@ header h1 {
   width: 90%;
 }
 
-.navContainer {
+.nav-container {
   margin: auto;
   width: 90%;
 }
 
-.navLink:hover {
+.nav-link:hover {
   cursor: pointer;
   color: #601A14;
 }
@@ -50,7 +50,7 @@ a:link {
   color: #6E6663;
 }
 
-.mainNav {
+.main-nav {
   background-color: #EBD8C3;
   color: #FFFFFF;
   font-size: 0.8rem;
@@ -60,7 +60,7 @@ a:link {
   align: center;
 }
 
-.navLink {
+.nav-link {
   border-bottom: 3px solid transparent;
   color: #FFFFFF;
   display: inline-block;
@@ -71,16 +71,16 @@ a:link {
   text-transform: uppercase;
 }
 
-.navLink:last-child {
-   margin-right: 0rem;
+.nav-link:last-child {
+   margin-right: 0;
 }
 
-.styleGuideNav {
+.style-guide-nav {
   background-color: #B5ABA3;
   margin-top: 0em;
 }
 
-.navLink-currentLink {
+.nav-link-current-link {
   border-bottom: 3px solid;
 }
 
@@ -186,34 +186,30 @@ nav label:before {
 	}
 }
 
-/* MAIN - PAGE WIDTH STYLING */
+/* STYLE-GUIDE.HTML */
 
-#interactiveElem, #pageTempl, #HighlightSection {
-  padding: 0.8rem 0rem 0rem;
+#interactiveElem, #page-temp {
+  padding: 0.8rem 0 0;
   border-bottom: 1.5px  #E8D8C3 dotted;
   margin: auto;
   width: 65%;
 }
 
-#TopBanner{
+#top-banner{
   padding-top: 3rem;
   margin: auto;
   width: 70%;
   align-items: center;
 }
 
-#combinedElem, #brandInfo, #textElem, #visualElem, #references {
+#combi-elements, #brand-information, #text-elements, #visual-elements, #references {
   border-bottom: 2px #E8D8C3 dashed;
   margin: auto;
   width: 65%;
 }
 
-.linkElement {
-  color: #000000;
-}
-
 .elements {
-  margin: 1rem 0rem 2.2rem 0rem;
+  margin: 1rem 0 2.2rem 0;
   width: 100%;
   padding-bottom: 1rem;
   border-bottom: 1px #6E6663 dotted;
@@ -221,7 +217,7 @@ nav label:before {
 
 /* STYLING FOR TEXT, IMAGE AND LINK */
 figure {
-  margin: 0rem;
+  margin: 0;
   display: inline-block;
 }
 
@@ -265,12 +261,12 @@ img {
   margin-right: auto;
 }
 
-.imageLink a {
+.image-link a {
   transition: 0.1s;
   border-bottom: none;
 }
 
-.imageLink a:hover, .imageLink a:active, .imageLink a:focus {
+.image-link a:hover, .image-link a:active, .image-link a:focus {
   opacity: 0.7;
   border-bottom: none;
 }
@@ -278,13 +274,13 @@ img {
 /* STYLING FOR FORMS AND INPUTS */
 label {
   display: block;
-  margin: 0rem 1rem 0rem 0rem;
+  margin: 0 1rem 0 0;
   font-weight: bold;
 }
 
-.h1Example {
+.h1-example {
   font-size: 2rem;
-  margin: 0rem;
+  margin: 0;
   font-family: 'Cabin', sans-serif;
 }
 
@@ -295,14 +291,14 @@ code {
 }
 
 ul {
-    list-style-type: square; 
+    list-style-type: square;
     line-height: 1.5rem;
-    margin: 0rem 0rem 1rem 0rem
+    margin: 0 0 1rem 0
 }
 
 pre {
-  padding: 0rem;
-  margin: 0rem;
+  padding: 0;
+  margin: 0;
   white-space: pre-wrap;
 }
 
@@ -338,7 +334,7 @@ input[type=radio] {
 button {
   text-transform: uppercase;
   border: none;
-  width: 79%;
+  width: 100%;
   font-family: 'Proxima Nova', sans-serif;
   transition: 0.3s;
   padding: 0.8rem;
@@ -367,13 +363,13 @@ home-button:hover {
   background-color: #AAAAAA;
 }
 
-.resetBtn {
+.reset-button {
   background-color: #F3F4F6;
   border: 1px transparent;
   width: 15rem;
 }
 
-.submitBtn {
+.submit-button {
   background-color: #6E6663;
   color: #FFFFFF;
   border: 1px transparent;
@@ -381,7 +377,7 @@ home-button:hover {
   width: 15rem;
 }
 
-.navBtn{
+.nav-button{
   background-color: rgba(92, 82, 76, 0.5);
   color: #FFFFFF;
   margin-left: 11rem;
@@ -397,7 +393,7 @@ ol {
   line-height: 1.75rem;
   list-style: none;
   padding-left: 2rem;
-  margin-top: 0rem;
+  margin-top: 0;
 }
 
 ol li {
@@ -410,29 +406,29 @@ ol li::before {
   padding-right: 1rem;
 }
 
-.fontEg {
+.font-example {
   font-size: 2rem;
-  margin: 0rem;
+  margin: 0;
 }
 
-.znikomit {
+.cabin {
   font-family: 'Cabin', sans-serif;
   margin-top: 1.2rem;
 }
 
-.proximaNova {
+.proxima-nova {
   font-family: 'Proxima Nova', sans-serif;
   margin-top: 0.3rem;
 }
 
-.bgClr {
+.bg-colour {
   background-color: #F3F4F6;
   max-width: 20rem;
   height: 10rem;
   border: 1px solid #000000;
 }
 
-.textClr {
+.text-colour {
   background-color: #000000;
   color: #FFFFFF;
   max-width: 20rem;
@@ -440,14 +436,14 @@ ol li::before {
   border: 1px solid transparent;
 }
 
-.acct1Clr {
+.acct1-colour {
   background-color: #B5ABA3;
   max-width: 20rem;
   height: 10rem;
   border: 1px transparent;
 }
 
-.acct2Clr {
+.acct2-colour {
   background-color: #601A14;
   color: #FFFFFF;
   max-width: 20rem;
@@ -455,7 +451,7 @@ ol li::before {
   border: 1px solid transparent;
 }
 
-.acct3Clr {
+.acct3-colour {
   background-color: #6E6663;
   color: #FFFFFF;
   max-width: 20rem;
@@ -463,18 +459,19 @@ ol li::before {
   border: 1px solid transparent;
 }
 
-.acct4Clr  {
+.acct4-colour  {
   background-color: #EBD8C3;
   max-width: 20rem;
   height: 10rem;
   border: 1px solid transparent;
 }
 
-.imageInspir {
+.image-inspir {
   max-width: 24rem;
   padding: 1rem;
 }
 
+/*
 .colourContainer {
   background-color: #EBD8C3;
   min-width: 12rem;
@@ -485,17 +482,18 @@ ol li::before {
 .clrContainerText {
   min-width: 5rem;
 }
+*/
 
 /* TEA (ITEMS) PAGE  */
-.productInfo {
+.product-info {
   width: inherit;
   padding: 0 2rem 2rem 2rem;
 }
 
 
 #suggested-teas{
-  padding-top:3rem;
-  padding-bottom:3rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 /* CART PAGE */
@@ -505,24 +503,24 @@ ol li::before {
   padding-bottom: 1rem;
 }
 
-.cartItem {
+.cart-item {
   background-color: #EBD8C3;
   max-width: 24rem;
   padding: 1rem;
 }
 
-.cartInfo {
+.cart-info {
   width: inherit;
-  padding: 0rem 2rem 2rem 2rem;
+  padding: 0 2rem 2rem 2rem;
 }
 
-.cartTotal {
+.cart-total {
   background-color: #E4D3C3;
-  padding: 0rem 1rem 1rem 1rem;
+  padding: 0 1rem 1rem 1rem;
 }
 
 /* CHECKOUT PAGE */
-.paymentForm h4 {
+.payment-form h4 {
   margin-top: 1rem;
 }
 
@@ -535,7 +533,7 @@ and referencing https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   box-sizing: border-box;
 }
 
-.ItemContainer, .prodContainer {
+.item-container, .product-container {
   margin-left: -1rem;
   display: flex;
   display: -webkit-flex;
@@ -550,7 +548,7 @@ and referencing https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   -ms-flex-wrap: wrap;
 }
 
-.paymentContainer{
+.payment-container{
   margin-left: -1rem;
   display: flex;
   display: -webkit-flex;
@@ -578,7 +576,7 @@ and referencing https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 }
 
 .contact-us-image{
-    width:60%;
+    width: 60%;
 }
 
 .home_product {
@@ -589,7 +587,7 @@ and referencing https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   max-width: 30rem;
 }
 
-.ItemContainer > * {
+.item-container > * {
   margin: 1rem 1rem 2rem 1rem;
 
   flex: 1 1 17rem;
@@ -597,7 +595,7 @@ and referencing https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   -ms-webkit-flex:  1 1 17rem;
 }
 
-.paymentContainer > * {
+.payment-container > * {
   margin: 1.2rem 1.2rem 2.3rem 1.2rem;
 
   flex: 1 1 17rem;
@@ -605,7 +603,7 @@ and referencing https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   -ms-webkit-flex:  1 1 17rem;
 }
 
-.clrBlock {
+.colour-block {
   flex: 1 1 15rem;
   -webkit-flex: 1 1 15rem;
   -ms-webkit-flex:  1 1 15rem;
