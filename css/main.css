@@ -23,7 +23,7 @@ header {
   position: relative;
   text-align: center;
   background-color: #FFFFFF;
-  padding-top: 3rem;
+  padding-top: 1rem;
   font-family: arial;
   font-size: 15px;
 }
@@ -252,8 +252,9 @@ h1 {
   color: rgb(0,0,0,0.5);
 }
 
-h2, h3, h4 {
+h2, h3, h4, p, strong {
   font-family: 'Cabin', sans-serif;
+  color: #000000;
 }
 
 a {
