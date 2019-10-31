@@ -1,141 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <title>Checkout</title>
-  <link rel="stylesheet" type="text/css" href="css/main.css" />
-  <meta name="viewport" content="width=device-width" initial-scale="1">
-</head>
-
-<!-- BODY -->
-<body>
-
-  <!-- NAVIGATION -->
-  <header>
-  <a href="home.html">
-    <img src="images/logo.png" alt="logo">
-  </a>
-    <nav class="main-nav">
-      <div>
-        <input type="checkbox" id="css-toggle-menu" name="css-toggle-menu">
-        <ul class="main">
-        <li><a href="home.html">Home</a></li>
-        <li><a href="product-listing.html">Our Teas</a></li>
-        <li><a href="about-the-company.html">About Us</a></li>
-        <li><a href="contact-us.html">Contact Us</a></li>
-        <li><a href="#">Checkout</a></li>
-      </ul>
-      <label for="css-toggle-menu" id="css-toggle-menu"></label>
-      </input>
-    </div>
-    </nav>
-  </header>
-  <!-- END NAVIGATION -->
-  
-<!--PAYMENT -->
-  <section id="page-temp">
-    <h2>Checkout</h2>
-    <h3>Payment Information</h3>
-
-    <div class="payment-container">
-
-      <section class="payment-form">
-        <h4>Payment Information</h4>
-          <form action="#" method="post">
-          <label>Card Type</label>
-          <input type="radio" name="cardType" value="visa" id="visa"/> Visa
-          <input type="radio" name="cardType" value="mastercard" id="mastercard"/> Mastercard
-          <input type="radio" name="cardType" value="debit" id="debit"/> Debit
-
-          <label for="name-cardholder">Full Name on Card</label>
-          <input type="text" name="name-cardholder" id="name-cardholder" placeholder="Your Full Name"/>
-
-          <label for="card-number">Card Number</label>
-          <input type="text" name="card-number" id="card-number" placeholder="1234-5678-9012-3456" maxlength="19"/>
-
-          <label for="expiry">Expiry Date (MM/YY)</label>
-          <input type="text" name="expiry" id="expiry" placeholder="MM/YY" maxlength="5"/>
-
-          <label for="card-secu-code">Card Security Code</label>
-          <input type="text" name="card-secu-code" id="card-secu-code" placeholder="000" maxlength="3"/>
-
-          <label for="phone-number">Home Number</label>
-          <input type="text" name="phone-number" id="phone-number" placeholder="123)456-7890" maxlength="12"/>
-
-          <label for="mobile-number">Mobile Number</label>
-          <input type="text" name="mobile-number" id="mobile-number" placeholder="123)456-7890" maxlength="12"/>
-        </form>
-  </section>
-
-  <section class="payment-form">
-  <h4>Billing Address</h4>
-    <form action="#" method="post">
-      <input type="checkbox" name="bill_addr" id="bill_addr"/> Apply my shipping address below
-
-      <p>Forename Surname<br /> 90 123rd Street<br /> City, Province,<br /> Canada,<br /> A0A 0A0</p>
-
-      <label for="surname">Surname</label>
-      <input type="text" name="surname" id="surname" placeholder="Surname"/>
-
-      <label for="forename">Forename</label>
-      <input type="text" name="forename" id="forename" placeholder="Forename"/>
-
-      <label for="street-number-line1">Street Number Line 1</label>
-      <input type="text" name="street-number-line1" id="street-number-line1" placeholder="90 123rd Street"/>
-
-      <label for="street-number-line2">Street Number Line 2</label>
-      <input type="text" name="street-number-line2" id="street-number-line2" placeholder="#123rd Unit or #PO Box"/>
-
-      <label for="province">Province</label>
-      <input type="text" name="province" id="province" placeholder="Province"/>
-
-      <label for="country">Country</label>
-      <input type="text" name="country" id="country" placeholder="Canada"/>
-
-      <label for="postal-code">Postal Code</label>
-      <input type="text" name="postal-code" id="postal-code" placeholder="A0A0A0" maxlength="6"/>
-    </form>
-  </section>
-
-    <section class="cart-total">
-      <h2>Summary: 3 Items</h2>
-      <section class="product-info">
-        <h4>Item 1: Midori Breakfast Tea (150g)</h4><p>&#36;19.04 (before tax)</p>
-        <h4>Item 2: Hip-o-Rose (50g)</h4><p>&#36;5.75 (before tax)</p>
-        <h4>Item 3: Flora Fruits (200g)</h4><p>&#36;21.78 (before tax)</p>
-      </section>
-      <label for="promo-code">Promotion Code</label>
-      <input type="text" name="promo-code" id="promo-code" placeholder="A0A00AA" maxlength="7"/>
-      <section class="product-info">
-        <p>Subtotal: &#36;46.57</p>
-        <p>TAX [GST - 5%]: &#36;2.33</p>
-        <p>TAX [PST - 7%]: &#36;3.26</p>
-        <p>Shipping: Free</p>
-        <p>Estimated Total: &#36;52.15</p>
-    </section>
-        <form action="thank-you.html">
-          <button name="submit" class="submit-button">Checkout</button>
-        </form>
-        <form action="product-listing.html">
-          <button name="back" class="reset-button">Buy More</button>
-        </form> <!-- reference for button link from http://www.hyperlinkcode.com/button-links.php -->
-    </section>
-  </div>
-</section>
-<!-- //END PAYMENT -->
-
-<!-- FOOTER -->
-<section class= "footer">
-<nav class="main-nav">
-  <div class="nav-container">
-    <a class="footer-nav-link current-link" href="style-guide.html">Style guide</a>
-    <a class="footer-nav-link current-link" href="https://github.com/winniewswong/P02Company.git">Github</a>
-    <a class="footer-nav-link current-link" href="references.html">References</a>
-  </div>
-</nav>
-</section>
-<!--END FOOTER -->
-</body>
-<!-- END BODY -->
+    <head>
+        <meta charset="utf-8">
+        <title>Checkout</title>
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <meta name="viewport" content="width=device-width" initial-scale="1">
+    </head>
+    <!-- BODY -->
+    <body>
+        <!-- NAVIGATION -->
+        <header>
+            <a href="home.html">
+            <img src="images/logo.png" alt="logo">
+            </a>
+            <nav class="main-nav">
+                <div>
+                    <input type="checkbox" id="css-toggle-menu" name="css-toggle-menu">
+                    <ul class="main">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="product-listing.html">Our Teas</a></li>
+                        <li><a href="about-the-company.html">About Us</a></li>
+                        <li><a href="contact-us.html">Contact Us</a></li>
+                        <li><a href="#">Checkout</a></li>
+                    </ul>
+                    <label for="css-toggle-menu" id="css-toggle-menu"></label>
+                    </input>
+                </div>
+            </nav>
+        </header>
+        <!-- END NAVIGATION -->
+        <!--PAYMENT -->
+        <section id="page-temp">
+            <h2>Checkout</h2>
+            <h3>Payment Information</h3>
+            <div class="payment-container">
+                <section class="payment-form">
+                    <h4>Payment Information</h4>
+                    <form action="#" method="post">
+                        <label>Card Type</label>
+                        <input type="radio" name="cardType" value="visa" id="visa"/> Visa
+                        <input type="radio" name="cardType" value="mastercard" id="mastercard"/> Mastercard
+                        <input type="radio" name="cardType" value="debit" id="debit"/> Debit
+                        <label for="name-cardholder">Full Name on Card</label>
+                        <input type="text" name="name-cardholder" id="name-cardholder" placeholder="Your Full Name"/>
+                        <label for="card-number">Card Number</label>
+                        <input type="text" name="card-number" id="card-number" placeholder="1234-5678-9012-3456" maxlength="19"/>
+                        <label for="expiry">Expiry Date (MM/YY)</label>
+                        <input type="text" name="expiry" id="expiry" placeholder="MM/YY" maxlength="5"/>
+                        <label for="card-secu-code">Card Security Code</label>
+                        <input type="text" name="card-secu-code" id="card-secu-code" placeholder="000" maxlength="3"/>
+                        <label for="phone-number">Home Number</label>
+                        <input type="text" name="phone-number" id="phone-number" placeholder="123)456-7890" maxlength="12"/>
+                        <label for="mobile-number">Mobile Number</label>
+                        <input type="text" name="mobile-number" id="mobile-number" placeholder="123)456-7890" maxlength="12"/>
+                    </form>
+                </section>
+                <section class="payment-form">
+                    <h4>Billing Address</h4>
+                    <form action="#" method="post">
+                        <input type="checkbox" name="bill_addr" id="bill_addr"/> Apply my shipping address below
+                        <p>Forename Surname<br /> 90 123rd Street<br /> City, Province,<br /> Canada,<br /> A0A 0A0</p>
+                        <label for="surname">Surname</label>
+                        <input type="text" name="surname" id="surname" placeholder="Surname"/>
+                        <label for="forename">Forename</label>
+                        <input type="text" name="forename" id="forename" placeholder="Forename"/>
+                        <label for="street-number-line1">Street Number Line 1</label>
+                        <input type="text" name="street-number-line1" id="street-number-line1" placeholder="90 123rd Street"/>
+                        <label for="street-number-line2">Street Number Line 2</label>
+                        <input type="text" name="street-number-line2" id="street-number-line2" placeholder="#123rd Unit or #PO Box"/>
+                        <label for="province">Province</label>
+                        <input type="text" name="province" id="province" placeholder="Province"/>
+                        <label for="country">Country</label>
+                        <input type="text" name="country" id="country" placeholder="Canada"/>
+                        <label for="postal-code">Postal Code</label>
+                        <input type="text" name="postal-code" id="postal-code" placeholder="A0A0A0" maxlength="6"/>
+                    </form>
+                </section>
+                <section class="cart-total">
+                    <h2>Summary: 3 Items</h2>
+                    <section class="product-info">
+                        <h4>Item 1: Midori Breakfast Tea (150g)</h4>
+                        <p>&#36;19.04 (before tax)</p>
+                        <h4>Item 2: Hip-o-Rose (50g)</h4>
+                        <p>&#36;5.75 (before tax)</p>
+                        <h4>Item 3: Flora Fruits (200g)</h4>
+                        <p>&#36;21.78 (before tax)</p>
+                    </section>
+                    <label for="promo-code">Promotion Code</label>
+                    <input type="text" name="promo-code" id="promo-code" placeholder="A0A00AA" maxlength="7"/>
+                    <section class="product-info">
+                        <p>Subtotal: &#36;46.57</p>
+                        <p>TAX [GST - 5%]: &#36;2.33</p>
+                        <p>TAX [PST - 7%]: &#36;3.26</p>
+                        <p>Shipping: Free</p>
+                        <p>Estimated Total: &#36;52.15</p>
+                    </section>
+                    <form action="thank-you.html">
+                        <button name="submit" class="submit-button">Checkout</button>
+                    </form>
+                    <form action="product-listing.html">
+                        <button name="back" class="reset-button">Buy More</button>
+                    </form>
+                    <!-- reference for button link from http://www.hyperlinkcode.com/button-links.php -->
+                </section>
+            </div>
+        </section>
+        <!-- //END PAYMENT -->
+        <!-- FOOTER -->
+        <section class= "footer">
+            <nav class="main-nav">
+                <div class="nav-container">
+                    <a class="footer-nav-link current-link" href="style-guide.html">Style guide</a>
+                    <a class="footer-nav-link current-link" href="https://github.com/winniewswong/P02Company.git">Github</a>
+                    <a class="footer-nav-link current-link" href="references.html">References</a>
+                </div>
+            </nav>
+        </section>
+        <!--END FOOTER -->
+    </body>
+    <!-- END BODY -->
 </html>
