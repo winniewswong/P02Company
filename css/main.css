@@ -22,6 +22,7 @@ body {
 header {
   position: relative;
   text-align: center;
+  align: center;
   background-color: #FFFFFF;
   padding-top: 1rem;
   font-family: arial;
@@ -582,19 +583,6 @@ ol li::before {
   max-width: 80%;
   padding: 1rem;
 }
-
-/*
-.colourContainer {
-  background-color: #EBD8C3;
-  min-width: 12rem;
-  max-width: 15rem;
-  padding: 1rem;
-}
-
-.clrContainerText {
-  min-width: 5rem;
-}
-*/
 
 /* TEA (ITEMS) PAGE  */
 .product-info {
